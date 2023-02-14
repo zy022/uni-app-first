@@ -1,0 +1,56 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/modone/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/modone/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/modone/navfir",
+      "style": {
+        "navigationBarTitleText": "首页跳转页"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F2F8F2",
+    "backgroundColor": "#F2F2F8"
+  },
+  "tabBar": {
+    "color": "#4D4F53", // tab 上的文字默认颜色
+    "selectedColor": "#42C5C1", // tab 上的文字选中时的颜色
+    "borderStyle": "black", // tabbar 上边框的颜色，可选值 black/white
+    "backgroundColor": "#ffffff", // tab 的背景色
+    "list": [
+      // 最少2个、最多5个 tab
+      {
+        "pagePath": "pages/modone/index", // 页面路径，必须在 pages 中先定义
+        "iconPath": "static/images/icon-home.png", // 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px
+        "selectedIconPath": "static/images/icon-home-HL.png", // 选中时的图片路径
+        "text": "首页" // tab 上按钮文字
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/images/icon-user.png",
+        "selectedIconPath": "static/images/icon-user-HL.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
